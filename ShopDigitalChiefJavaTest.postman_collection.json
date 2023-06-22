@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "2b4a9d1f-6129-4b1e-a8e8-3d24d2871af7",
+		"name": "ShopDigitalChiefJavaTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25628688"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/v1/products/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/v1/products/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Laptop\",\r\n  \"description\": \"High-performance laptop\",\r\n  \"price\": 1500.0,\r\n  \"category\": {\r\n    \"id\": 1\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/products",
+				"description": "в бд все сохраняется"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/products",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"LaptopLaptop\",\r\n  \"description\": \"High-performance laptop\",\r\n  \"price\": 1500.0,\r\n  \"category\": {\r\n    \"id\": 1\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/products",
+				"description": "изменения показываются в бд"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/products/6",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/api/v1/products/6"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/categories/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/v1/categories/2"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/categories",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Electronics\",\r\n  \"description\": \"Category for electronic products\",\r\n  \"active\": true,\r\n  \"products\": [\r\n    {\r\n      \"name\": \"Laptop\",\r\n      \"description\": \"High-performance laptop\",\r\n      \"price\": 1500.99\r\n    },\r\n    {\r\n      \"name\": \"Smartphone\",\r\n      \"description\": \"Latest smartphone model\",\r\n      \"price\": 999.99\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/categories"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/categories",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"El\",\r\n  \"description\": \"Cdsadasdadsad\",\r\n  \"active\": true,\r\n  \"products\": [\r\n    {\r\n      \"name\": \"Laptop\",\r\n      \"description\": \"High-performance laptop\",\r\n      \"price\": 1500.99\r\n    },\r\n    {\r\n      \"name\": \"Smartphone\",\r\n      \"description\": \"Latest smartphone model\",\r\n      \"price\": 999.99\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/categories"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/categories",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"El\",\r\n  \"description\": \"Cdsadasdadsad\",\r\n  \"active\": true,\r\n  \"products\": [\r\n    {\r\n      \"name\": \"Laptop\",\r\n      \"description\": \"High-performance laptop\",\r\n      \"price\": 1500.99\r\n    },\r\n    {\r\n      \"name\": \"Smartphone\",\r\n      \"description\": \"Latest smartphone model\",\r\n      \"price\": 999.99\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/categories/4"
+			},
+			"response": []
+		}
+	]
+}
